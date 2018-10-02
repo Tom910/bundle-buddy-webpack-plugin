@@ -11,13 +11,13 @@ Your favorite [bundle-buddy](https://github.com/samccone/bundle-buddy) duplicati
 ### Yarn
 
 ```bash
-yarn add bundle-buddy-webpack-plugin --dev
+yarn add bundle-buddy-webpack-plugin-next --dev
 ```
 
 ### npm
 
 ```bash
-npm install bundle-buddy-webpack-plugin --save-dev
+npm install bundle-buddy-webpack-plugin-next --save-dev
 ```
 
 ## Usage
@@ -26,7 +26,7 @@ Just require the plugin into your webpack configuration, and pass it to the `plu
 **webpack.config.js**
 
 ```javascript
-const BundleBuddyWebpackPlugin = require("bundle-buddy-webpack-plugin");
+const BundleBuddyWebpackPlugin = require("bundle-buddy-webpack-plugin-next");
 
 module.exports = {
   // ...
