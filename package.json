@@ -1,13 +1,13 @@
 {
-  "name": "bundle-buddy-webpack-plugin",
-  "version": "0.3.0",
+  "name": "bundle-buddy-webpack-plugin-next",
+  "version": "0.4.0",
   "author": {
     "name": "Sean Larkin",
     "email": "sean.larkin1@gmail.com",
     "url": "github.com/thelarkinn"
   },
   "scripts": {
-    "webpack-defaults": "webpack-defaults",
+    "defaults": "webpack-defaults",
     "start": "npm run build -- -w",
     "appveyor:test": "npm run test",
     "build": "cross-env NODE_ENV=production babel src -d dist --ignore 'src/**/*.test.js'",
@@ -39,7 +39,7 @@
     "node": ">= 4.3 < 5.0.0 || >= 5.10"
   },
   "peerDependencies": {
-    "webpack": "^2.0.0 || ^3.0.0"
+    "webpack": "^2.0.0 || ^3.0.0 || ^4.0.0"
   },
   "pre-commit": "lint-staged",
   "lint-staged": {
@@ -49,6 +49,7 @@
     ]
   },
   "devDependencies": {
+    "@webpack-contrib/defaults": "^2.5.0",
     "babel-cli": "^6.24.1",
     "babel-jest": "^20.0.3",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
@@ -65,7 +66,6 @@
     "nsp": "^2.6.3",
     "pre-commit": "^1.2.2",
     "standard-version": "^4.2.0",
-    "webpack": "^3.2.0",
-    "webpack-defaults": "^1.6.0"
+    "webpack": "^4.15.0"
   }
 }
